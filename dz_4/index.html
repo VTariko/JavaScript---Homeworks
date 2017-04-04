@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework_4 - VTariko</title>
+    <script>
+        //Number 1:Разбить число от 0 до 999 на объект с единицами, десятками и сотнями
+        numberToObject(14);
+        numberToObject(167);
+        numberToObject(4);
+        numberToObject(0);
+        numberToObject(1020);
+
+        function numberToObject(n) {
+            var obj = {};
+            if (n<0 || n>999) {
+                console.log("Выбранное число выходит за диапазон допустимых значений!");
+            } else {
+                obj.unit = n%10;
+                n = Math.floor(n/10);
+                if (n>0) {
+                    obj.decade =n%10;
+                    n = Math.floor(n/10)
+                    if (n>0)
+                        obj.hundred = n;
+                }
+            }
+            console.log(obj);
+        }
+        //Number 1 - end
+    </script>
+    <script src="history.js" defer></script>
+    <script src="game.js" defer></script>
+</head>
+
+<body>
+
+</body>
+</html>

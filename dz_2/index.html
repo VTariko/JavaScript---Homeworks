@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork_2 - VTariko</title>
+    <script>
+        //Number 1
+//        var a = 1, b = 1, c, d;
+//        c = ++a; alert(c);              // 2 - потому что к значению переменной a сначала прибавляется единица,
+//                                        // и только потом идет операция присвоения переменной c значения переменной a
+//        d = b++; alert(d);              // 1 - потому что сначала идет присвоение переменной d значения переменной b,
+//                                        // и только потом переменная b увеличивается на единицу
+//        c = (2+ ++a); alert(c);         // 5 - в данном случае, прежде чем взять значение переменной a,
+//                                        // которая изначально равна 2, мы увееличиваем значение на единицу.
+//                                        // Таким образом, имееем выражения с = (2 + 3)
+//        d = (2+ b++); alert(d);         // 4 - здесь же, мы сначала берем значение переменной b,
+//                                        // которое равняется 2, и только потом мы увееличиваем её значение на единицу.
+//                                        // Таким образом, имееем выражения с = (2 + 2), а b становистя равным 3.
+//        alert(a);                       // 3 - предыдущие операции увеличивают значения переменных a и b, по два раза
+//        alert(b);                       // прибавляя по единице.
+        //Number 1 - end
+        console.log("-------------------------");
+        //Number 2
+        var a = 2;
+        var x = 1 + (a *= 2);           // Наибольший приоритет имеют скобки, поэтмуо сначала считается то, что в них.
+                                        // В данном случае, в скобках мы имеем операцию умножения переменной a на 2.
+                                        // Таким образом, в скобках мы получаем 4. Прибавив, к этому единицу, получим 5.
+        console.log("x = " + x);        //Убидимся в своей правоте, показав значение переменной x в консоли
+        //Number 2 - end
+        console.log("-------------------------");
+        //Number 3
+        var a = Math.round(Math.random()*(100+100) - 100);
+        var b = Math.round(Math.random()*(100+100) - 100);
+        compareAandB(a, b);
+
+        function compareAandB(x, y) {
+            if (x >= 0 && y >= 0) {
+                console.log("Разность чисел " + x + " и " + y + " равняется " + (x - y));
+            } else if (x < 0 && y < 0) {
+                console.log("Произведение чисел " + x + " и " + y + " равняется " + (x * y));
+            } else {
+                console.log("Сумма чисел " + x + " и " + y + " равняется " + (x + y));
+            }
+        }
+        //Number 3 - end
+        console.log("-------------------------");
+        //Number 4  - здесь я выбрал сразу два варианта. Второй кажется слишком уж громоздким, ошибку легко допустить,
+        // а первым - логичнее было бы писать сразу if
+        var s = Math.round(Math.random()*15);
+        recOneToFifteen_first(s);
+        recOneToFifteen_second(s);
+
+        function recOneToFifteen_first(a) {
+            switch (a<15) {
+                case true:
+                    console.log(a);
+                    recOneToFifteen_first(++a);
+                    break;
+                default:
+                    console.log(a);
+                    console.log("End!");
+                    break;
+            }
+        }
+
+        function recOneToFifteen_second(a) {
+            switch (a) {
+                case 1:
+                    console.log(a++);
+                case 2:
+                    console.log(a++);
+                case 3:
+                    console.log(a++);
+                case 4:
+                    console.log(a++);
+                case 5:
+                    console.log(a++);
+                case 6:
+                    console.log(a++);
+                case 7:
+                    console.log(a++);
+                case 8:
+                    console.log(a++);
+                case 9:
+                    console.log(a++);
+                case 10:
+                    console.log(a++);
+                case 11:
+                    console.log(a++);
+                case 12:
+                    console.log(a++);
+                case 13:
+                    console.log(a++);
+                case 14:
+                    console.log(a++);
+                default:
+                    console.log(a);
+                    console.log("End!");
+                    break;
+            }
+        }
+        //Number 4 - end
+        console.log("-------------------------");
+        //Number 5
+        var q = Math.round(Math.random()*(100+100) - 100);
+        var w = Math.round(Math.random()*(100+100) - 100);
+        console.log("Числа " + q + " и " + w);
+        console.log("Сумма:\t\t\t" + summ(q, w));
+        console.log("Разность:\t\t" + subtract(q, w));
+        console.log("Произведение:\t" + multiply(q, w));
+        console.log("Частное:\t\t" + division(q, w));
+
+        function summ(a, b) {
+            return a + b;
+        }
+        
+        function subtract(a, b) {
+            return a - b;
+        }
+        
+        function multiply(a, b) {
+            return a * b;
+        }
+        
+        function division(a, b) {
+            return a / b;
+        }
+        //Number 5 - end
+        console.log("-------------------------");
+        //Number 6
+        console.log("Сумма:\t\t\t" + mathOperation(q, w, "+"));
+        console.log("Разность:\t\t" + mathOperation(q, w, "-"));
+        console.log("Произведение:\t" + mathOperation(q, w, "*"));
+        console.log("Частное:\t\t" + mathOperation(q, w, "/"));
+        console.log("Неизвестное:\t" + mathOperation(q, w, "%"));
+
+        function mathOperation(arg1, arg2, operation) {
+            var res;
+            switch (operation) {
+                case "+":
+                    res = summ(arg1, arg2);
+                    break;
+                case "-":
+                    res = subtract(arg1, arg2);
+                    break;
+                case "*":
+                    res = multiply(arg1, arg2);
+                    break;
+                case "/":
+                    res = division(arg1, arg2);
+                    break;
+                default:
+                    res = "Недопустимый символ математической операции!";
+                    break;
+            }
+            return res;
+        }
+        //Number 6 - end
+        console.log("-------------------------");
+        //Number 7
+        console.log(null == 0);             //1 - false
+        console.log(null === 0);            //2 - false
+        console.log(null >= 0);             //3 - true
+        console.log(null <= 0);             //4 - true
+        console.log(null < 0);              //5 - false
+        console.log(null > 0);              //6 - false
+        console.log(null != 0);             //7 - true
+        //Тут я, если честно, застрял, особенно гляда на пункты 3 и 4. Однако, случайно введя еще одно всравнение,
+        // восьмое, все встало на свои места:
+        console.log(null + null === 0);     //8 - true
+        //Очевидно, разные сравнения приводят null к разным типам. Когда у нас в примере 8 есть математическая оерация,
+        //приведение идет к числу. очевидно, что сравенения ">=" и "<=" также имеют преобразование к числу.
+        //Иные операторы сравнения не делают такого преобразования в данном случае.
+        //Number 7 - end
+        console.log("-------------------------");
+        //Number 8
+        console.log(power(2, 8));
+        console.log(power(12, 3));
+        console.log(power(4, 6));
+
+        function power(val, pow) {
+            if (pow>1) {
+                val = val * power(val, --pow);
+            }
+            return val;
+        }
+        //Number 8 - end
+    </script>
+</head>
+<body>
+
+</body>
+</html>

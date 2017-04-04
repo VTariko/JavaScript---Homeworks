@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework_3 - VTariko</title>
+    <script>
+        //Number 1: Простые числа
+        console.log("-----------------");
+        console.log("Task 1");
+        simpleNumber(100);
+
+        function simpleNumber(max) {
+            var n = 0;
+            while (n<=max) {
+                if (checkNumber(n))
+                    console.log(n);
+                n++;
+            }
+        }
+
+        function checkNumber(n) {
+            for (var i = 2; i<=Math.sqrt(n); i++) {
+                if (n%i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        //Number 1 - end
+
+
+        //Number 2:
+        console.log("-----------------");
+        console.log("Task 2");
+        var strNull = " - это ноль";
+        var strChet = " - четное число";
+        var strNechet = " - нечетное число";
+        var a = 0;
+        do {
+            if (a==0) {
+                console.log(a + strNull)
+            } else {
+                console.log( a +
+                    ((a%2==0)
+                    ? strChet
+                    : strNechet));
+            }
+            a++;
+        } while (a<=10);
+
+        //Number 2 - end
+
+
+        //Number 3:
+        console.log("-----------------");
+        console.log("Task 3");
+        for(var i = 0; i<10; console.log(i++)) {}
+        //Number 3 - end
+
+
+        //Number 4: Создать пирамиду.
+        console.log("-----------------");
+        console.log("Task 4");
+        pyramid(25);
+
+        function pyramid(n) {
+            var symbMain = "|";                 //Основной символ пирамиды
+            var symbNotMain = "*";              //Окружающий символ пирамиды - легко поменять на пробел или любой другой символ,
+                                                //можно делать очень красиво - экспериментируйте!)
+            var l = n%2 !== 0 ? n : n-1;        //Длина строки - должна быть нечетной (для красоты).
+            for(var i = 1; i<=n; i+=2) {        // (i+=2) - опять же, из соображений красоты,
+                                                // используем только нечетное количество символов
+                var str = "";
+                var length = (l-i)/2;           //длина минус количество символов пополам - необходимый о
+                var j;
+                for(j=0;j<length;j++) {
+                    str += symbNotMain;
+                }
+                for(j=0;j<i;j++) {
+                    str += symbMain;
+                }
+                for(j=0;j<length;j++) {
+                    str += symbNotMain;
+                }
+                console.log(str);
+            }
+        }
+        //Number 4 - end
+    </script>
+</head>
+<body>
+
+</body>
+</html>

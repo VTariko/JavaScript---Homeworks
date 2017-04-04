@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework_1 - VTariko</title>
+    <script>
+        function convertCelToFar() {
+            var cel = document.getElementById("celTemperature").value;
+            var far = 9 * cel / 5 + 32;
+            document.getElementById("farTemperature").value = far;
+            console.log(cel + " градусов Цельсия равняется " + far + " градусов Фаренгейта");
+        }
+    </script>
+    <script>
+        var admin;
+        var name;
+        name = "Василий";
+        admin = name;
+        console.log("Name:\t" + name + "\nAdmin:\t" + admin)
+
+        //Ответ на  вопрос №4: "1000108",
+        //так как в это случае число 1000 преобразуется в строку.
+    </script>
+</head>
+<body style="height: 100%">
+<div style="display: flex; align-items: center; justify-content: center; height: 100%">
+    <div style="display: flex;justify-content: center; height: inherit; float: left">
+        <input id="celTemperature" type="number" style="float: left; margin: auto">
+        <button style="float: left; margin: auto" onclick="convertCelToFar()">⇒</button>
+        <input id="farTemperature" type="number" style="float: right; margin: auto">
+    </div>
+</div>
+</body>
+</html>
