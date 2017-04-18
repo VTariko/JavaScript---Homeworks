@@ -1,0 +1,34 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 996px;
+	margin: 0 auto;
+	height: 500px;
+}
+
+
+.left-arrow {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+}
+
+.bigPicture {
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.img-big-picture {
+	height: 500px;
+}

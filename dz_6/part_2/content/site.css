@@ -1,0 +1,778 @@
+@font-face {
+	font-family: SegoeWPSemibold;
+	src: url('fonts/SegoeWPSemibold.ttf');
+}
+
+@font-face {
+	font-family: SegoeWPLight;
+	src: url("fonts/SegoeWPLight.ttf");
+}
+
+@font-face {
+	font-family: SegoeWP;
+	src: url("fonts/SegoeWP.ttf");
+}
+
+@font-face {
+	font-family: SegoeWPN;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/SegoeWPN.woff') format('woff');
+}
+
+@font-face {
+	font-family: SegoeUISymbol;
+	src: url('fonts/SegoeUISymbol.ttf');
+}
+
+@font-face {
+	font-family: SegoeWPBold;
+	src: url('fonts/SegoeWPBold.ttf');
+}
+
+@font-face {
+	font-family: HelveticaLTStd-Light;
+	src: url('fonts/HelveticaLTStd-Light.otf')
+}
+
+@font-face {
+	font-family: SegoeWPSemiLight;
+	src: url('fonts/SegoeWPSemiLight.ttf');
+}
+
+@font-face {
+	font-family: HelveticaLTStd-Roman;
+	src: url('fonts/HelveticaLTStd-Roman.otf');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	height: 179px;
+	background-color: #f5f5f6;
+	float: left;
+}
+
+.navbar {
+	background-color: rgb(66, 66, 66);
+	height: 28px;
+	line-height: 28px;
+	padding-left: 63%;
+}
+
+.navbar a {
+	font-family: SegoeWPLight;
+	color: #ffffff;
+	font-size: 1em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	/*line-height: 1.625;!* Приближение из-за подстановки шрифтов *!*/
+	text-align: center;
+	text-decoration: none;
+	padding-left: 11px;
+	padding-right: 11px;
+	float: left;
+}
+
+.navbar a:hover { background-color: #000; }
+
+.container {
+	width: 996px;
+	margin: 0 auto;
+}
+
+header .container {
+	height: 151px;
+	position: relative;
+	background-color: #f5f5f6;
+}
+
+
+.logo img {
+	position: absolute;
+	top: 20px;
+}
+
+.search-shape {
+	position: absolute;
+	top: 37px;
+	left: 175px;
+}
+
+.search input {
+	border: none;
+	position: absolute;
+	top: 41px;
+	left: 180px;
+	width: 330px;
+	height: 30px;
+}
+
+.search button {
+	background-color: #7ab360;
+	border: none;
+	height: 40px;
+	position: absolute;
+	top: 37px;
+	left: 510px;
+}
+
+.search span {
+	font-family: SegoeWPN;
+	color: #ffffff;
+	font-size: 1.438em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 1.13; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	position: relative;
+	top: -5px;
+}
+
+.cart {
+	margin-left: 686px;
+	height: 112px;
+	width: 190px;
+	float: left;
+}
+
+.cart img {
+	position: absolute;
+	top: 24px;
+}
+
+.cart-text {
+	position: absolute;
+	top: 24px;
+	left: 725px;
+}
+
+.cart-big-text {
+	font-family: SegoeWP;
+	color: #6d6d6d;
+	font-size: 1.438em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 1.13; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+}
+
+.cart-small-text {
+	font-family: SegoeWP;
+	color: #6d6d6d;
+	font-size: 0.813em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 2; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+}
+
+.cart-price {
+	font-family: SegoeWP;
+	color: #6d6d6d;
+	font-size: 1.688em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	line-height: 0.963; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	position: absolute;
+	top: 60px;
+	left: 692px;
+}
+
+.cart button {
+	background-color: #373737;
+	border: none;
+	border-radius: 5%;
+	width: 83px;
+	height: 26px;
+	position: absolute;
+	top: 61px;
+	left: 782px;
+	font-family: SegoeWP;
+	color: #ffffff;
+	font-size: 0.938em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 1.733; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+}
+
+.division {
+	position: absolute;
+	top: 20px;
+	left: 875px;
+}
+
+.wish-list {
+	/*float: left;*/
+	margin-left: 875px;
+	height: 112px;
+	position: relative;
+}
+
+.wish-list img {
+	position: absolute;
+	top: -3px;
+	left: 25px;
+}
+
+.wish-list a {
+	text-decoration: none;
+	position: absolute;
+	top: 38px;
+	left: 25px;
+	font-family: SegoeWP;
+	color: #6d6d6d;
+	font-size: 1.313em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 1.238; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+}
+
+.wish-number {
+	background-color: #7ab360;
+	width: 28px;
+	height: 16px;
+	position: absolute;
+	top: 52px;
+	left: 85px;
+	border-radius: 50%;
+}
+
+.wish-number span {
+	position: absolute;
+	left: 7px;
+	top: -5px;
+	font-family: SegoeWP;
+	color: #ffffff;
+	font-size: 0.813em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 2; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+}
+
+.navbar-lower {
+	float: left;
+	width: inherit;
+	line-height: 39px;
+	position: relative;
+}
+
+.navbar-lower a {
+	font-family: SegoeUISymbol;
+	color: #5b5b5b;
+	font-size: 1.188em;
+	font-weight: 400;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+	padding-right: 31px;
+	padding-left: 7px;
+}
+
+.navbar-lower a.link-last { padding-right: 7px; }
+
+.navbar-lower a:hover {
+	background-color: #7ab360;
+	font-family: SegoeWP;
+	color: #ffffff;
+	font-size: 1.188em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+}
+
+.navbar-lower::after {
+	content: '';
+	width: 996px;
+	height: 2px;
+	background-color: #dfdfdf;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.navbar-lower::before {
+	content: '';
+	width: 996px;
+	height: 2px;
+	background-color: #dfdfdf;
+	position: absolute;
+	left: 0;
+}
+
+.mainContent {
+	float: left;
+	width: 100%;
+	min-height: 300px;
+}
+
+.left-banner {
+	margin-top: 14px;
+	margin-bottom: 10px;
+	float: left;
+	position: relative;
+}
+
+.left-arrow {
+	position: absolute;
+	top: 127px;
+	left: 12px;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 127px;
+	left: 664px;
+}
+
+.left-banner .text-book {
+	float: left;
+	position: absolute;
+	top: 132px;
+	left: 304px;
+	text-align: center;
+}
+
+.left-banner .name-of-book {
+	font-family: SegoeWPBold;
+	color: #ffffff;
+	font-size: 2.938em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	line-height: 0.596; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+}
+
+.left-banner .series-of-book {
+	font-family: SegoeWP;
+	color: #ffffff;
+	font-size: 1.563em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 1.12; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+}
+
+.left-banner .author-of-book {
+	font-family: SegoeWPBold;
+	color: #ffffff;
+	font-size: 1.313em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	line-height: 1.333; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+}
+
+.right-banner {
+	margin-top: 14px;
+	margin-bottom: 9px;
+	float: right;
+	display: inline-block;
+	position: relative;
+}
+
+.right-banner .text-book {
+	float: left;
+	position: absolute;
+	top: 15px;
+	text-align: center;
+	height: 305px;
+	width: 269px;
+}
+
+.right-banner .text-book .event {
+	font-family: SegoeWPSemibold;
+	color: #ffffff;
+	font-size: 1.688em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 0.963; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+}
+
+.right-banner .text-book .name-of-book {
+	font-family: SegoeWPLight;
+	color: #ffffff;
+	font-size: 0.938em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 1.733; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	top: -2px;
+	position: relative;
+	left: 2px;
+}
+
+.right-banner .text-book .event-book {
+	position: relative;
+	top: 7px;
+	left: -5px;
+}
+
+.right-banner .text-book .event-detail {
+	font-family: SegoeWPLight;
+	color: #ffffff;
+	font-size: 1.313em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 1.238; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	position: relative;
+	top: 22px;
+	left: -4px;
+}
+
+.right-banner .text-book .price {
+	font-family: SegoeWPSemibold;
+	color: #ffffff;
+	font-size: 1.813em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 0.897; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	position: relative;
+	top: 25px;
+	left: -6px;
+}
+
+.right-banner .text-book button {
+	border: none;
+	background-color: #7ab360;
+	border-radius: 5%;
+	width: 110px;
+	height: 30px;
+	position: relative;
+	bottom: -30px;
+	right: 3px;
+}
+
+.right-banner .text-book button span, .btn-buy span {
+	font-family: SegoeWPSemibold;
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 1.368; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	text-shadow: 0px 1px 0px rgba(74, 151, 74, 0.75);
+	font-size: large;
+	position: relative;
+	left: 1px;
+}
+
+.left-menu {
+	float: left;
+	width: 188px;
+	height: 865px;
+	border-color: #dfdfdf;
+	border-style: solid;
+	border-width: 1px;
+	position: relative;
+}
+
+.left-menu span {
+	font-family: SegoeWPLight;
+	color: #6b6969;
+	font-size: 1.521em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 39px;
+	text-align: left;
+	position: relative;
+	left: 15px;
+}
+
+.left-menu ul {
+	list-style-type: none;
+	margin-top: 0;
+	padding-left: 0;
+}
+
+.left-menu ul li { padding-left: 17px; }
+
+.left-menu ul li:hover {
+	background-color: #7ab360;
+	color: #ffffff;
+}
+
+.left-menu ul li:hover:after { height: 0; }
+
+.left-menu .group {
+	font-family: SegoeWPSemibold;
+	color: #696969;
+	font-size: 1.063em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 1.863; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	padding-bottom: 3px;
+}
+
+.left-menu .group:hover {
+	font-family: SegoeWPN;
+	font-size: 1.063em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 600;
+	line-height: 1.863em; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+}
+
+.left-menu .item {
+	padding-left: 23px;
+	font-family: SegoeUISymbol;
+	color: #555454;
+	font-size: 0.958em;
+	font-weight: 400;
+	line-height: 1.74em;
+	text-align: left;
+	display: list-item;
+	position: relative;
+}
+
+.left-menu .item::after {
+	content: '';
+	width: 140px;
+	height: 1px;
+	background-color: #dfdfdf;
+	position: absolute;
+	left: 23px;
+	bottom: 0;
+}
+
+.left-menu .last::after { height: 0; }
+
+.products {
+	width: 798px;
+	height: 905px;
+	position: relative;
+	/*background-color: #202AAc;*/
+	float: right;
+}
+
+.products .tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f5f5f6;
+	float: left;
+}
+
+.products button {
+	width: 140px;
+	height: 40px;
+	background-color: inherit;
+	border-color: #dfdfdf;
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	font-family: HelveticaLTStd-Light;
+	color: #6b6969;
+	font-size: 1.042em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 1.8; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.products button:hover { background-color: #ddd; }
+
+.products button.active {
+	background-color: #ffffff;
+	border: none;
+}
+
+.content {
+	display: none;
+	padding: 0 12px;
+	border: 1px solid #ccc;
+	position: relative;
+	height: 875px;
+	float: left;
+}
+
+.content[id="best"] {
+	display: block;
+
+}
+
+.content[id="cart"] {
+	display: block;
+	width: 797px !important;
+	padding-right: 0px;
+
+}
+
+.book:first-child { margin-left: 0.1em; }
+
+.book:nth-child(6n) { margin-right: 0.1em; }
+
+.book {
+	width: 150px;
+	height: 290px;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	margin-left: 0.1em;
+	margin-right: 0.1em;
+	margin-top: 2px;
+}
+
+.book .name-of-book {
+	font-family: SegoeWPSemiLight;
+	color: #646464;
+	font-size: 0.938em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 1.067; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	position: relative;
+	top: -7px;
+}
+
+.book .price-of-book {
+	font-family: HelveticaLTStd-Roman;
+	color: #f05356;
+	font-size: 1.354em; /* Приближение из-за подстановки шрифтов */
+	line-height: 0.923; /* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	position: relative;
+	top: -4px;
+}
+
+.btn-buy {
+	float: none !important;
+	position: relative !important;
+	border-radius: 20% !important;
+	height: 1.75em !important;
+	width: 80% !important;
+	background-color: #7ab360 !important;
+	border: 0 !important;
+	margin: 0 auto !important;
+	text-align: center !important;
+}
+
+.btn-buy:focus { outline: 0 }
+
+.btn-buy:hover {
+	background-color: #248040 !important;
+
+}
+
+.btn-buy:active {
+	background-color: #fdee23;
+	color: black;
+	box-shadow: 0 0 0 2px black;
+}
+
+footer {
+	margin-top: 25px;
+	float: left;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	background-image: url('img/footer.png');
+}
+
+footer .container {
+	height: 100%;
+	width: 1005px;
+}
+
+footer .container div {
+	float: left;
+}
+
+.footer-group-text {
+	font-family: SegoeWPLight;
+	color:  #dddddd;
+	font-size: 1.229em;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 1.017;/* Приближение из-за подстановки шрифтов */
+	text-align: center;
+}
+
+.footer-group-text {
+	position: relative;
+	top: 18px;
+}
+
+div.bio {
+	width: 259px;
+}
+
+div.prof {
+	width: 300px;
+}
+
+div.earth {
+	width: 251px;
+}
+
+div.math {
+	width: 195px;
+}
+
+div.bio .footer-group-text {
+	left: 13px;
+}
+
+footer ul {
+	list-style-type: none;
+	padding: 0;
+	font-family: SegoeWPLight;
+	color: #dddddd;
+	font-size: 0.854em; /* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 1.756; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	position: relative;
+	top: 21px;
+}
+
+
+footer div.bio ul {
+	margin-left: 13px;
+}
+
+footer .container .footer-list {
+	position: relative;
+}
+
+footer .container .footer-list::after {
+	content: '';
+	width: 170px;
+	height: 1px;
+	background-color: #dfdfdf;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+
+.footer-credit {
+	position: relative;
+	top: 66px;
+	left: 254px;
+	text-align: center;
+}
+
+.footer-credit span {
+	font-family: SegoeWPLight;
+	color:  #dddddd;
+	font-size: 1.229em;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 1.22;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+}
+
+.footer-card {
+	position: relative;
+	top: 10px;
+	left: 186px;
+}
+
+footer .big-line {
+	content: '';
+	width: 100%;
+	height: 1px;;
+	background-image: url("img/big-line.png");
+	position: relative;
+	top: -50px;
+}
+
+footer .law {
+	font-family: SegoeWPLight;
+	color:  #dddddd;
+	font-size: 0.979em;/* Приближение из-за подстановки шрифтов */
+	font-weight: 300;
+	line-height: 1.532;/* Приближение из-за подстановки шрифтов */
+	text-align: center;
+	position: relative;
+	top: -40px;
+}

@@ -1,0 +1,25 @@
+.tabula {
+	width: 360px;
+	height: 360px;
+}
+
+.tile {
+	width: 40px;
+	line-height: 40px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	vertical-align: bottom;
+	font-size: 30px;
+}
+
+.cellDark { background-color: rgb(138, 104, 53); }
+
+.cellLight { background-color: rgb(222, 168, 108); }
+
+.cell-border {
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	box-sizing: border-box;
+}

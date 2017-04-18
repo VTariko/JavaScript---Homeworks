@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 5_1+3 - VTariko</title>
+    <link rel="stylesheet" type="text/css" href="content/site.css">
+    <script defer>
+        var imgId, imgCount, appDiv;
+
+        window.onload=function () {
+            var image = document.getElementsByClassName("img-small-picture");
+            for(var i=0;i<image.length;i++){
+                image[i].onclick=changeBigPicture;
+            }
+            imgCount = document.getElementsByClassName("img-small-picture").length;
+            var arrowLeft = document.getElementsByClassName("left-arrow")[0];
+            var arrowRight = document.getElementsByClassName("right-arrow")[0];
+            arrowLeft.onclick =goToLeft;
+            arrowRight.onclick=goToRight;
+        }
+        function changeBigPicture(event) {
+            appDiv=document.getElementById('bigPicture');
+            var eventElement = event.target;
+            var imageNameParts=eventElement.id.split('_');
+            imgId = imageNameParts[1];
+            openPicture();
+        }
+
+        function openPicture() {
+            appDiv.innerHTML='';
+            var src ='content/img/big/'+imgId+'.jpg';
+            var imageDOMElement=document.createElement('img');
+            imageDOMElement.src=src;
+            imageDOMElement.className = "img-big-picture";
+            imageDOMElement.onerror = function () {
+                alert("Пути \"" +src+"\" не существует!");
+            };
+            appDiv.appendChild(imageDOMElement);
+        }
+
+        function goToLeft() {
+            if (--imgId<=0)
+                imgId = imgCount;
+            openPicture();
+        }
+
+        function goToRight() {
+            if (++imgId>imgCount)
+                imgId = 1;
+            openPicture();
+        }
+    </script>
+
+</head>
+<body>
+<div>
+    <img class="img-small-picture" id="img_1" src="content/img/small/1.jpg" alt="">
+    <img class="img-small-picture" id="img_2" src="content/img/small/2.jpg" alt="">
+    <img class="img-small-picture" id="img_3" src="content/img/small/3.jpg" alt="">
+</div>
+<div class="container">
+    <img src="content/img/arrow-left.png" alt="arrow to left" class="arrow left-arrow">
+    <img src="content/img/arrow-right.png" alt="arrow to right" class="arrow right-arrow">
+    <div class="bigPicture" id="bigPicture">
+
+    </div>
+    <div>
+
+</body>
+</html>

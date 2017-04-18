@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 5_2 - VTariko</title>
+    <link rel="stylesheet" type="text/css" href="content/site.css">
+    <script src="content/cart.js" defer></script>
+    <script src="content/string.js"></script>
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="index.html">Sign in</a>
+        <a href="index.html">My Account</a>
+        <a href="index.html">Order Status</a>
+        <a href="index.html">Help</a>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="content/img/logo.png" alt="logo">
+        </div>
+        <div class="search">
+            <img class="search-shape" src="content/img/searchShape.png" alt="shape for search">
+            <input type="text">
+            <button>
+                <img src="content/img/lens.png"><span> Search</span></button>
+        </div>
+        <div class="cart">
+            <img src="content/img/cart.png" alt="cart">
+            <div class="cart-text">
+                <span class="cart-big-text">Your cart</span><span class="cart-small-text"> (2 items)</span>
+            </div>
+            <span class="cart-price">$0.0</span>
+            <button onclick="">Checkout</button>
+        </div>
+        <img class="division" src="content/img/line.png" alt="line">
+        <div class="wish-list">
+            <a href="index.html">
+                <img src="content/img/star.png" alt="wish list"><br><span>Wish list</span>
+            </a>
+            <div class="wish-number">
+                <span>20</span></div>
+        </div>
+        <div class="navbar-lower">
+            <a href="index.html">Computers</a>
+            <a href="index.html">Cooking</a>
+            <a href="index.html">Education</a>
+            <a href="index.html">Fiction</a>
+            <a href="index.html">Health</a>
+            <a href="index.html">Mathematics</a>
+            <a href="index.html">Medical</a>
+            <a href="index.html">Reference</a>
+            <a class="link-last" href="index.html">Science</a>
+        </div>
+    </div>
+</header>
+<div class="mainContent">
+    <div class="container">
+        <div class="banners">
+
+        </div>
+        <div class="left-menu">
+            <span>Categories</span>
+            <ul>
+                <li class="group">ALL</li>
+                <li class="group">Fiction & Literature</li>
+                <li class="item">Children</li>
+                <li class="item">Science Fiction</li>
+                <li class="item">Fantasy</li>
+                <li class="item">Mystery</li>
+                <li class="item">Romance</li>
+                <li class="item">Horror</li>
+                <li class="item">Poetry</li>
+                <li class="item">Literature</li>
+                <li class="item">Crime</li>
+                <li class="group">Non - Fiction</li>
+                <li class="item">Comic</li>
+                <li class="item">Cook</li>
+                <li class="item">Psychology</li>
+                <li class="item">Medical</li>
+                <li class="item">Art</li>
+                <li class="item">Photography</li>
+                <li class="item">Law</li>
+                <li class="item">History</li>
+                <li class="item">Business</li>
+                <li class="item">Computer</li>
+                <li class="group">Other</li>
+                <li class="item">Baby</li>
+                <li class="item">Sex</li>
+                <li class="item">Travel</li>
+                <li class="item">Science</li>
+                <li class="item last">Sports</li>
+            </ul>
+        </div>
+        <div class="products">
+            <div class="tab">
+                <button class="tablinks active" onclick="openTab(event, 'best')" id="besttab">Best sellers</button>
+                <button class="tablinks" onclick="openTab(event, 'new')">New Arrivals</button>
+                <button class="tablinks" onclick="openTab(event, 'used')">Used Books</button>
+                <button class="tablinks" id="cartTab" onclick="openTab(event, 'cart')">Your Cart</button>
+            </div>
+            <br>
+            <div class="content" id="best">
+                <div class="book">
+                    <img src="content/img/book1.png" alt="book 1">
+                    <span class="name-of-book">The Hare With<br>Amber Eyes</span><br/>
+                    <span class="price-of-book">$50</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book2.png" alt="book 2">
+                    <span class="name-of-book">The war of<br>Art</span><br/>
+                    <span class="price-of-book">$60</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book3.png" alt="book 3">
+                    <span class="name-of-book">The Hare With<br>Amber Eyes</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book4.png" alt="book 4">
+                    <span class="name-of-book">The Immortals<br>of Meluha</span><br/>
+                    <span class="price-of-book">$80</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book5.png" alt="book 5">
+                    <span class="name-of-book">Life Is What You<br>Make It</span><br/>
+                    <span class="price-of-book">$200</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book6.png" alt="book 6">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book7.png" alt="book 7">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book8.png" alt="book 8">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book9.png" alt="book 9">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book10.png" alt="book 10">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book11.png" alt="book 11">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book12.png" alt="book 12">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book13.png" alt="book 13">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book14.png" alt="book 14">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+                <div class="book">
+                    <img src="content/img/book15.png" alt="book 15">
+                    <span class="name-of-book">Some<br>Name</span><br/>
+                    <span class="price-of-book">$25</span>
+                </div>
+            </div>
+            <div class="content" id="new">
+                <h2>Тут совсем ничего нет!</h2>
+            </div>
+            <div class="content" id="used">
+                <h2>И тут тоже, извините, но пусто.</h2>
+            </div>
+            <div class="content" id="cart">
+                <h2>This is your cart:</h2>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="bio">
+            <span class="footer-group-text">Biography & True Stories</span>
+            <br>
+            <ul>
+                <li class="footer-list">General</li>
+                <li class="footer-list">Diaries, Letters & Journals</li>
+                <li class="footer-list">Memoirs</li>
+                <li class="footer-list">True Stories</li>
+                <li class="footer-list">Generic Exams</li>
+                <li class="footer-list">GK Titles</li>
+                <li class="footer-list">Medical Entrance</li>
+                <li class="footer-list">Other Entrance Exams</li>
+                <li class="footer-list">PG Entrance Examinations</li>
+                <li class="footer-list">Self-help Titles</li>
+                <li class="footer-list">Sociology</li>
+            </ul>
+        </div>
+        <div class="prof">
+            <span class="footer-group-text">Professional & Reference</span>
+            <br>
+            <ul>
+                <li class="footer-list">Academic and Reference</li>
+                <li class="footer-list">Business Trade</li>
+                <li class="footer-list">Engineering and Computer Science</li>
+                <li class="footer-list">Humanities, Social Sciences and Languages</li>
+                <li class="footer-list">Introduction to Computers</li>
+                <li class="footer-list">Science and Maths</li>
+                <li class="footer-list">Trade Business</li>
+                <li class="footer-list">English Language & Literature</li>
+                <li class="footer-list">English Language Teaching</li>
+                <li class="footer-list">Environment Awareness</li>
+                <li class="footer-list">Environment Protection</li>
+            </ul>
+        </div>
+        <div class="earth">
+            <span class="footer-group-text">Earth Sciences</span>
+            <br>
+            <ul>
+                <li class="footer-list">Earth Sciences</li>
+                <li class="footer-list">Geography</li>
+                <li class="footer-list">The Environment</li>
+                <li class="footer-list">Regional & Area Planning</li>
+                <li class="footer-list">Fantasy</li>
+                <li class="footer-list">Gay</li>
+                <li class="footer-list">Humorous</li>
+                <li class="footer-list">Interactive</li>
+                <li class="footer-list">Legal</li>
+                <li class="footer-list">Lesbian</li>
+                <li class="footer-list">Men'S Adventure</li>
+            </ul>
+        </div>
+        <div class="math">
+            <span class="footer-group-text">Mathematics</span>
+            <br>
+            <ul>
+                <li class="footer-list">Algebra</li>
+                <li class="footer-list">Differential Equations</li>
+                <li class="footer-list">Discrete Mathematics</li>
+                <li class="footer-list">Fourier Analysis</li>
+                <li class="footer-list">Numerical Analysis</li>
+                <li class="footer-list">Probability</li>
+                <li class="footer-list">Statistical Methods/data Analysis</li>
+                <li class="footer-list">Stochastic And Random Processes</li>
+                <li class="footer-list">Topology</li>
+                <li class="footer-list">Statistics</li>
+                <li class="footer-list">Mathematics</li>
+            </ul>
+        </div>
+        <div class="footer-credit">
+            <span>We accept all major Credit Card/Debit Card/Internet Banking<br></span>
+            <div class="footer-card">
+                <img src="content/img/master-card.png" alt="master card" class="master-card">
+                <img src="content/img/american.png" alt="american express card" class="american">
+                <img src="content/img/visa.png" alt="visa card" class="visa">
+            </div>
+        </div>
+    </div>
+    <div class="big-line"></div>
+    <div class="law">Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates</div>
+</footer>
+</body>
+</html>
